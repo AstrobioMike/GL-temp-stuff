@@ -253,7 +253,8 @@ mv sample-1_R2_raw_val_2.fq.gz sample-1_R2_trimmed.fastq.gz
 The NuGEN-specific script can be downloaded from their [github](https://github.com/nugentechnologies/NuMetRRBS#analysis-guide-for-nugen-ovation-rrbs-methyl-seq) with the following:
 
 ```bash
-curl -LO https://raw.githubusercontent.com/nugentechnologies/NuMetRRBS/master/trimRRBSdiversityAdaptCustomers.py
+curl -LO \
+     https://raw.githubusercontent.com/nugentechnologies/NuMetRRBS/master/trimRRBSdiversityAdaptCustomers.py
 ```
 
 **Single-end example**  
@@ -436,7 +437,8 @@ bismark --bowtie2 \
   --genome_folder bismark_reference_genome/ \
   sample-1_trimmed.fastq.gz
 
-# renaming output files so they are cleaner and will work with sorted bam file/auto-detection of bismark2summary later
+# renaming output files so they are cleaner and will work with sorted bam file/auto-detection 
+# of bismark2summary later
 mv sample-1_trimmed_bismark_bt2_SE_report.txt sample-1_bismark_bt2_sorted_SE_report.txt
 mv sample-1_trimmed_bismark_bt2.nucleotide_stats.txt sample-1_bismark_bt2.nucleotide_stats.txt
 mv sample-1_trimmed_bismark_bt2.bam sample-1_bismark_bt2.bam
@@ -455,7 +457,8 @@ bismark --bowtie2 \
   -1 sample-1_R1_trimmed.fastq.gz \
   -2 sample-1_R2_trimmed.fastq.gz
 
-# renaming output files so they are cleaner and will work with sorted bam file/auto-detection of bismark2summary later
+# renaming output files so they are cleaner and will work with sorted bam file/auto-detection 
+# of bismark2summary later
 mv sample-1_R1_trimmed_bismark_bt2_PE_report.txt sample-1_bismark_bt2_sorted_PE_report.txt
 mv sample-1_R1_trimmed_bismark_bt2.nucleotide_stats.txt sample-1_bismark_bt2.nucleotide_stats.txt
 mv sample-1_R1_trimmed_bismark_bt2_pe.bam sample-1_bismark_bt2_pe.bam
