@@ -438,6 +438,7 @@ bismark --bowtie2 \
 
 # renaming output files so they are cleaner and will work with sorted bam file/auto-detection of bismark2summary later
 mv sample-1_trimmed_bismark_bt2_SE_report.txt sample-1_bismark_bt2_sorted_SE_report.txt
+mv sample-1_trimmed_bismark_bt2.nucleotide_stats.txt sample-1_bismark_bt2.nucleotide_stats.txt
 mv sample-1_trimmed_bismark_bt2.bam sample-1_bismark_bt2.bam
 ```
 
@@ -456,7 +457,8 @@ bismark --bowtie2 \
 
 # renaming output files so they are cleaner and will work with sorted bam file/auto-detection of bismark2summary later
 mv sample-1_R1_trimmed_bismark_bt2_PE_report.txt sample-1_bismark_bt2_sorted_PE_report.txt
-mv sample-1_R1_trimmed_bismark_bt2_pe.bam sample-1_bismark_bt2.bam
+mv sample-1_R1_trimmed_bismark_bt2.nucleotide_stats.txt sample-1_bismark_bt2.nucleotide_stats.txt
+mv sample-1_R1_trimmed_bismark_bt2_pe.bam sample-1_bismark_bt2_pe.bam
 ```
 
 **Parameter Definitions:**
